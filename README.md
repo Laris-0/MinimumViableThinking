@@ -42,27 +42,25 @@ Once added, you can trigger any command by typing `/command-name` in Claude Code
 ## Available Commands
 
 ### Discovery & Strategy
-| Command | What it does | Framework |
-|---|---|---|
-| `/opportunity-map` | Build an Opportunity Solution Tree from outcome to testable solutions | Teresa Torres OST |
-| `/assumption-test` | Surface and stress-test riskiest assumptions before building | Teresa Torres |
-| `/research-brief` | Create a hypothesis-driven research brief | Continuous discovery |
-| `/interview-guide` | Generate a past-story interview guide for continuous discovery | Teresa Torres |
-| `/synthesize-interviews` | Turn raw interview notes into themed insights and opportunities | Research synthesis |
+| Command | What it does |
+|---|---|
+| `/opportunity-map` | Map from a desired outcome to testable solutions |
+| `/assumption-test` | Surface and stress-test riskiest assumptions before building |
+| `/research-brief` | Create a hypothesis-driven research brief |
+| `/interview-guide` | Generate a past-story interview guide |
+| `/synthesize-interviews` | Turn raw interview notes into themed insights and opportunities |
 
 ### Documentation
-| Command | What it does | Framework |
-|---|---|---|
-| `/write-prd` | Draft a 1-pager or full PRD | Lenny Rachitsky + Marty Cagan |
-| `/summarize-for-notion` | Turn raw research into a polished Notion doc | Research synthesis |
-| `/draft-comms` | Draft Slack updates, stakeholder comms, or announcements | BLUF format |
+| Command | What it does |
+|---|---|
+| `/write-prd` | Draft a 1-pager or full PRD |
+| `/summarize-for-notion` | Turn raw research into a polished Notion doc |
+| `/draft-comms` | Draft Slack updates, stakeholder comms, or announcements |
 
 ### Execution
-| Command | What it does | Framework |
-|---|---|---|
-| `/write-ticket` | Write a structured engineering ticket with user story and outcome link | Marty Cagan 4 pillars |
-| `/figma-to-tickets` | Turn Figma designs into Linear tickets | — |
-| `/debug-and-escalate` | Reproduce a bug and produce a Notion incident doc + Jira ticket | — |
+| Command | What it does |
+|---|---|
+| `/write-ticket` | Write tickets from a user problem or Figma design (future: Speckit integration) |
 
 ### AI & Prompt Work
 | Command | What it does |
