@@ -156,3 +156,8 @@ Three broad user archetypes: **students**, **practitioners**, and **people looki
 | Command | What it does |
 |---|---|
 | `/session-wrap` | Save decisions, learnings, and next steps before ending a session |
+
+**Onboarding**
+| Command | What it does |
+|---|---|
+| `/onboard` | Welcome a new PM or designer and guide them through tool access and first commands |

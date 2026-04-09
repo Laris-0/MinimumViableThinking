@@ -72,6 +72,11 @@ Once added, you can trigger any command by typing `/command-name` in Claude Code
 |---|---|
 | `/session-wrap` | Capture decisions, learnings, and next steps before ending a session |
 
+### Onboarding
+| Command | What it does |
+|---|---|
+| `/onboard` | Welcome a new PM or designer and guide them through tool access and first commands |
+
 ---
 
 ## Contributing
