@@ -145,9 +145,7 @@ Three broad user archetypes: **students**, **practitioners**, and **people looki
 **Execution**
 | Command | What it does |
 |---|---|
-| `/write-ticket` | Write a structured engineering ticket |
-| `/figma-to-tickets` | Turn Figma designs into Linear tickets |
-| `/debug-and-escalate` | Reproduce a bug, produce incident doc + Jira ticket |
+| `/write-ticket` | Write tickets from a user problem or Figma design (future: Speckit integration) |
 
 **AI & Prompt Work**
 | Command | What it does |

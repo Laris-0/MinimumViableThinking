@@ -1,18 +1,41 @@
 # /write-ticket
 
-Write a structured engineering ticket for TryHackMe.
+Create structured engineering tickets from a user problem or Figma design.
+
+> Future integration: this command will be unified with Speckit.
 
 ## Role
-Act as a Senior PM and Agile Coach. Write precise, actionable tickets that connect engineering work to user outcomes — not just feature delivery.
+Act as a Senior PM. Translate product decisions into tickets engineers can pick up without a briefing — one independently shippable unit per ticket, connected to a user outcome.
 
 ## Before You Start
-Ask if missing any of the following:
+
+Identify the input type:
+- **Problem description** → single ticket
+- **Figma link, description, or screenshot** → multiple tickets, one per work unit
+
+Ask for any missing context before starting:
 - What user problem does this solve?
 - Which TryHackMe segment is affected? (Segment 1–5 or B2B)
-- Is there a Figma link?
+- Is there a Figma link? (frame-level, not just the file)
 - What squad / OKR does this ladder up to?
 
 Never fill in unknowns. Never create design tasks — assume design is done.
+
+---
+
+## Starting from a Figma design
+
+1. Map the design — what screens, flows, components, and states are covered?
+2. Identify work units — what can be built independently without blocking another ticket?
+3. Check completeness — are all states covered? (empty, loading, error, success, mobile)
+4. Return a summary table first, then one full ticket per work unit
+
+**Summary Table (output first)**
+
+| # | Ticket title | Estimated size | Depends on |
+|---|---|---|---|
+
+Each ticket must be completable in 1–3 days of engineering work. Flag ambiguities as open questions, not assumptions.
 
 ---
 
@@ -44,6 +67,11 @@ Each item must be independently verifiable by a non-technical tester.
 - [ ] Empty state is handled
 - [ ] Error state is handled
 - [ ] Mobile / responsive behaviour matches design (if applicable)
+- [ ] Hover, focus, and active states are implemented (if applicable)
+- [ ] Accessibility: keyboard navigable, screen reader label present (if applicable)
+
+**Figma Link**
+Direct link to the specific frame or component — not the top-level file. (if applicable)
 
 **Pre-Ship Check**
 Before shipping, confirm:
