@@ -123,10 +123,16 @@ Not MCP-connected — reference HEX when the user shares a link or notebook dire
 
 ## Cross-Referencing Rule
 
-When running any discovery, research, or documentation command:
+When running any discovery, research, or documentation command, always ask first:
+
+> "Before I start — do you want me to pull data from Amplitude and Notion to ground this in real signals? I can search for prior research, existing docs, and behavioural data relevant to this topic."
+
+If yes:
 1. **Search Notion first** — what has the team already learned or decided?
 2. **Pull Amplitude data** — what does actual user behaviour tell us?
 3. **Flag gaps** — what's missing from both sources that the user needs to go find?
+
+If no: proceed with the information the user has provided and flag where data would strengthen the output.
 
 Never generate data from memory when a source is reachable. Always cite where data came from.
 
