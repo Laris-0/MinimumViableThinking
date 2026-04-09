@@ -85,6 +85,53 @@ Three broad user archetypes: **students**, **practitioners**, and **people looki
 
 ---
 
+## Data Sources — When to Use What
+
+Claude has live MCP access to Amplitude and Notion. Use them proactively — never generate assumptions when real data is reachable.
+
+### Amplitude (MCP connected)
+Best for: behavioural data, user events, funnels, cohorts, experiment results, session replays, feature flags.
+
+| Question type | Amplitude tool to use |
+|---|---|
+| What events or properties exist? | `get_event_properties` |
+| How are users behaving? | `query_amplitude_data` or `query_chart` |
+| What cohorts exist? | `get_cohorts` |
+| What experiments have run? | `get_experiments` or `query_experiment` |
+| Show me a chart | `render_chart` |
+| Find a specific dashboard or chart | `search` |
+
+Always call `get_context` first in a new session to confirm the right project is selected.
+
+### Notion (MCP connected)
+Best for: prior research, PRDs, experiment write-ups, briefs, decision logs, anything the team has documented.
+
+| Question type | Notion tool to use |
+|---|---|
+| Does prior research exist on this topic? | `notion-search` |
+| Get full content of a doc | `notion-fetch` |
+| Create a new doc | `notion-create-pages` |
+| Update an existing doc | `notion-update-page` |
+
+Always search Notion before starting any research brief, PRD, or synthesis — prior work may already exist.
+
+### HEX (manual reference)
+Best for: custom SQL notebooks, deeper joins across datasets, analysis that Amplitude can't do natively.
+Not MCP-connected — reference HEX when the user shares a link or notebook directly.
+
+---
+
+## Cross-Referencing Rule
+
+When running any discovery, research, or documentation command:
+1. **Search Notion first** — what has the team already learned or decided?
+2. **Pull Amplitude data** — what does actual user behaviour tell us?
+3. **Flag gaps** — what's missing from both sources that the user needs to go find?
+
+Never generate data from memory when a source is reachable. Always cite where data came from.
+
+---
+
 ## How We Work
 
 - We default to **English**. Some team members may request Portuguese (pt-BR).
