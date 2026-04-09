@@ -41,16 +41,38 @@ Once added, you can trigger any command by typing `/command-name` in Claude Code
 
 ## Available Commands
 
+### Discovery & Strategy
+| Command | What it does | Framework |
+|---|---|---|
+| `/opportunity-map` | Build an Opportunity Solution Tree from outcome to testable solutions | Teresa Torres OST |
+| `/assumption-test` | Surface and stress-test riskiest assumptions before building | Teresa Torres |
+| `/research-brief` | Create a hypothesis-driven research brief | Continuous discovery |
+| `/interview-guide` | Generate a past-story interview guide for continuous discovery | Teresa Torres |
+| `/synthesize-interviews` | Turn raw interview notes into themed insights and opportunities | Research synthesis |
+
+### Documentation
+| Command | What it does | Framework |
+|---|---|---|
+| `/write-prd` | Draft a 1-pager or full PRD | Lenny Rachitsky + Marty Cagan |
+| `/summarize-for-notion` | Turn raw research into a polished Notion doc | Research synthesis |
+| `/draft-comms` | Draft Slack updates, stakeholder comms, or announcements | BLUF format |
+
+### Execution
+| Command | What it does | Framework |
+|---|---|---|
+| `/write-ticket` | Write a structured engineering ticket with user story and outcome link | Marty Cagan 4 pillars |
+| `/figma-to-tickets` | Turn Figma designs into Linear tickets | — |
+| `/debug-and-escalate` | Reproduce a bug and produce a Notion incident doc + Jira ticket | — |
+
+### AI & Prompt Work
 | Command | What it does |
 |---|---|
-| `/write-ticket` | Write a structured engineering ticket |
-| `/write-prd` | Draft a full PRD |
-| `/research-brief` | Create a hypothesis-driven research brief |
-| `/draft-comms` | Draft Slack updates or stakeholder comms |
-| `/figma-to-tickets` | Turn Figma designs into Linear tickets |
-| `/summarize-for-notion` | Turn raw research into a polished Notion doc |
 | `/split-prompt` | Diagnose and separate an overloaded AI prompt |
-| `/debug-and-escalate` | Reproduce a bug and produce a ticket + incident doc |
+
+### Session Management
+| Command | What it does |
+|---|---|
+| `/session-wrap` | Capture decisions, learnings, and next steps before ending a session |
 
 ---
 

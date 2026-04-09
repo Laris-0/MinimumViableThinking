@@ -1,57 +1,121 @@
 # /write-prd
 
-Draft a full Product Requirements Document for a TryHackMe initiative.
+Draft a Product Requirements Document for a TryHackMe initiative.
 
 ## Role
-Act as a Senior PM documentation specialist. Write clear, evidence-backed PRDs that align teams around the problem before the solution.
+Act as a Senior PM. Write evidence-backed PRDs that align teams around the problem before committing to a solution. Follow Lenny Rachitsky's principle: nailing the problem statement is the single most important step.
 
-## Rules
-- Every section must have content — no empty placeholders
-- Problem statement must reference real user evidence (quotes, data, research)
-- Success metrics must be measurable — not vague ("improve engagement" is not a metric)
-- Scope must explicitly state what is OUT, not just what is IN
-- Link to source materials wherever possible
-- Write for the audience — adjust detail level accordingly
+## Choose Your Format First
 
-## PRD Structure
+**1-Pager** — use for: smaller bets, early-stage ideas, internal alignment
+**Full PRD** — use for: significant initiatives, cross-squad work, anything going to leadership
 
-**Title**
-Feature or initiative name + date
+Ask which format is needed before starting. If unclear, default to 1-pager and offer to expand.
+
+---
+
+## FORMAT A: 1-Pager (Lenny Rachitsky)
 
 **Problem Statement**
-What user problem are we solving? Include evidence: quotes, Amplitude data, research findings. Reference specific TryHackMe user segments where relevant.
+What is broken or missing for the user? Be specific.
+Must include: who is affected, what the friction is, and why it matters now.
+Evidence: quote, Amplitude signal, or research finding required.
 
-**Hypotheses**
-We believe [user segment] experiences [problem] because [reason].
-We'll know this is true if [measurable evidence].
+**Target Segment**
+Which TryHackMe segments? (Segment 1–5, B2B)
+Who is the primary user? Who is secondary?
 
-**Target Segments**
-Which TryHackMe user segments does this primarily serve? (Segment 1–5, or B2B)
+**Hypothesis**
+We believe [segment] experiences [problem] because [reason].
+We'll know we solved it if [measurable outcome].
 
-**Proposed Solution**
-High-level description of the solution. Not a spec — a direction.
+**Proposed Direction**
+Not a spec — a direction. What are we trying to do?
 
 **Success Metrics**
-| Metric | Current baseline | Target | Measurement method |
+| Metric | Baseline | Target | How measured |
+|---|---|---|---|
+
+**Non-Goals**
+What are we explicitly NOT solving? This is as important as what we are solving.
+
+**Risks & Open Questions**
+What assumptions are we making? What could kill this?
+
+**Next Steps**
+What needs to happen before this moves to full spec?
+
+---
+
+## FORMAT B: Full PRD
+
+**Title**
+Initiative name + date + owner
+
+**Problem Statement**
+What user problem are we solving?
+- Evidence: quotes, Amplitude data, research findings
+- Segment: which TryHackMe user type is most affected?
+- Severity: how often does this happen, how painful is it?
+- Cost of inaction: what happens if we don't solve this?
+
+**Opportunity**
+Map this to the Opportunity Solution Tree:
+- Outcome we're pursuing (linked to squad OKR)
+- Opportunity (unmet user need)
+- Why this opportunity over others? What did we deprioritise?
+
+**Hypotheses**
+List each hypothesis:
+"We believe [segment] experiences [problem] because [reason].
+We'll know this is true if [measurable evidence].
+We'll know this is false if [counter-evidence]."
+
+**Riskiest Assumptions**
+What must be true for this to work? Order by risk.
+| Assumption | Risk level | How we'll test it |
+|---|---|---|
+
+**Target Segments**
+Primary: [Segment X] — because [reason]
+Secondary: [Segment Y] — because [reason]
+Not targeting: [Segment Z] — because [reason]
+
+**Proposed Solution**
+High-level direction, not a spec. Include:
+- What the experience looks like for the user
+- Key decisions made and why
+- Alternatives considered and why rejected
+
+**Cagan's Four Pillars Validation**
+| Pillar | Status | Evidence or open question |
+|---|---|---|
+| Valuable | ✅ / ❓ / ❌ | |
+| Usable | ✅ / ❓ / ❌ | |
+| Feasible | ✅ / ❓ / ❌ | |
+| Viable | ✅ / ❓ / ❌ | |
+
+**Success Metrics**
+| Metric | Baseline | Target | Measurement method |
 |---|---|---|---|
 
 **Scope**
-
 In scope:
-- 
+-
 
-Out of scope:
-- 
+Out of scope (and why):
+-
 
-Future consideration:
-- 
+Future consideration (parking lot):
+-
 
 **Risks & Open Questions**
-- What assumptions are we making that could be wrong?
-- What do we still need to learn?
+- What could go wrong?
+- What do we still need to learn before building?
+- What dependencies could block us?
 
 **Dependencies**
-Other squads, systems, or initiatives this work depends on.
+Other squads, systems, decisions, or timelines this relies on.
 
 **References**
-Links to Notion docs, research, Amplitude dashboards, Figma files.
+Notion docs, research briefs, Amplitude dashboards, Figma files, related tickets.

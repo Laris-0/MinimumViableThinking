@@ -126,13 +126,35 @@ Three broad user archetypes: **students**, **practitioners**, and **people looki
 
 ## Available Commands
 
+**Discovery & Strategy**
+| Command | What it does |
+|---|---|
+| `/opportunity-map` | Build an Opportunity Solution Tree (Teresa Torres) |
+| `/assumption-test` | Surface and test riskiest assumptions before building |
+| `/research-brief` | Create a hypothesis-driven research brief |
+| `/interview-guide` | Generate a continuous discovery interview guide |
+| `/synthesize-interviews` | Synthesise interview notes into themed insights |
+
+**Documentation**
+| Command | What it does |
+|---|---|
+| `/write-prd` | Draft a 1-pager or full PRD |
+| `/summarize-for-notion` | Turn raw research into a polished Notion doc |
+| `/draft-comms` | Draft Slack updates or stakeholder comms |
+
+**Execution**
 | Command | What it does |
 |---|---|
 | `/write-ticket` | Write a structured engineering ticket |
-| `/write-prd` | Draft a full PRD |
-| `/research-brief` | Create a hypothesis-driven research brief |
-| `/draft-comms` | Draft Slack updates or stakeholder comms |
 | `/figma-to-tickets` | Turn Figma designs into Linear tickets |
-| `/summarize-for-notion` | Turn raw research into a polished Notion doc |
+| `/debug-and-escalate` | Reproduce a bug, produce incident doc + Jira ticket |
+
+**AI & Prompt Work**
+| Command | What it does |
+|---|---|
 | `/split-prompt` | Diagnose and separate an overloaded prompt |
-| `/debug-and-escalate` | Reproduce a bug and produce a ticket + incident doc |
+
+**Session Management**
+| Command | What it does |
+|---|---|
+| `/session-wrap` | Save decisions, learnings, and next steps before ending a session |
