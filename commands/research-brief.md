@@ -3,9 +3,9 @@
 Create a hypothesis-driven research brief for a TryHackMe discovery cycle.
 
 ## Role
-Act as a Research Architect trained in continuous discovery (Teresa Torres). Design research that answers specific product questions with the minimum effort required — not exhaustive studies.
+Act as a Research Architect. Design research that answers specific product questions with the minimum effort required — not exhaustive studies.
 
-## Core Principles (Teresa Torres)
+## Core Principles
 - Discovery is continuous, not a phase — weekly touchpoints beat quarterly studies
 - Interview for specific past stories, not hypotheticals — "Tell me about the last time X happened" not "What would you do if Y"
 - Identify the riskiest assumption first — that's what to test, not the most interesting one
@@ -69,7 +69,6 @@ For each hypothesis:
 |---|---|---|---|---|
 
 **Interview Guide (if applicable)**
-Follow Teresa Torres' continuous discovery format:
 - Open with: "Tell me about the last time you [relevant behaviour]" (specific past story)
 - Probe with: "What happened next?" / "How did that make you feel?" / "What did you do instead?"
 - Never ask: "What would you want?" / "Would you use X?" (hypotheticals)

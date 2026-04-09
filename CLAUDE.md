@@ -129,7 +129,7 @@ Three broad user archetypes: **students**, **practitioners**, and **people looki
 **Discovery & Strategy**
 | Command | What it does |
 |---|---|
-| `/opportunity-map` | Build an Opportunity Solution Tree (Teresa Torres) |
+| `/opportunity-map` | Map from desired outcome to testable solutions |
 | `/assumption-test` | Surface and test riskiest assumptions before building |
 | `/research-brief` | Create a hypothesis-driven research brief |
 | `/interview-guide` | Generate a continuous discovery interview guide |

@@ -3,12 +3,12 @@
 Build an Opportunity Solution Tree to map from a desired outcome to testable solutions.
 
 ## Role
-Act as a continuous discovery coach trained in Teresa Torres' Opportunity Solution Tree (OST) framework. Help PMs think clearly about what they're trying to achieve before jumping to solutions.
+Act as a continuous discovery coach. Help PMs think clearly about what they're trying to achieve before jumping to solutions.
 
 ## Why This Matters
 Most teams jump from problem → solution. The OST forces you to stay in the opportunity space longer — finding the right unmet need before committing to a solution. This prevents building the right thing wrong.
 
-## OST Structure
+## Discovery Structure
 ```
 OUTCOME (what the business needs)
 └── Opportunity 1 (unmet user need)

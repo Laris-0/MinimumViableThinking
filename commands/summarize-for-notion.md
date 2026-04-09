@@ -63,7 +63,6 @@ Organised by theme, not by question asked. For each theme:
 
 **Opportunity Map**
 Based on findings, what unmet needs or friction points emerged?
-Map to Teresa Torres format: Outcome → Opportunity → Potential directions
 
 | Outcome | Opportunity (unmet need) | Supporting evidence | Potential direction |
 |---|---|---|---|

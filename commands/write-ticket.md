@@ -45,7 +45,7 @@ Each item must be independently verifiable by a non-technical tester.
 - [ ] Error state is handled
 - [ ] Mobile / responsive behaviour matches design (if applicable)
 
-**Cagan's Four Pillars Check**
+**Pre-Ship Check**
 Before shipping, confirm:
 - [ ] Valuable — does it solve a real user problem?
 - [ ] Usable — can users figure it out without instruction?
