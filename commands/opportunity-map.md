@@ -64,10 +64,51 @@ Format: "If we [show/build/ask], and [users do/say X], we'll know [assumption] i
 
 ## Output Format
 
-Return:
+Return in this order:
+
 1. Outcome statement (refined)
 2. Opportunity map (table format)
 3. Prioritised opportunity with reasoning
 4. Solution ideas for top opportunity
 5. Assumption map
 6. Recommended first experiment
+7. Mermaid diagram (always include)
+8. Draw.io export (if requested)
+
+---
+
+## Visual Output
+
+### Always include — Mermaid diagram
+
+After the written output, always generate a Mermaid diagram of the full tree. Use this format:
+
+```
+flowchart TD
+    O["🎯 OUTCOME\nIncrease W1 retention from 32% to 45% by Q3"]
+    O --> OP1["💡 Opportunity 1\nUsers don't know what to do next"]
+    O --> OP2["💡 Opportunity 2\nFirst room feels too hard"]
+    OP1 --> S1A["Solution A\nPersonalised next step prompt"]
+    OP1 --> S1B["Solution B\nGuided path assignment on signup"]
+    OP2 --> S2A["Solution A\nDifficulty calibration quiz"]
+    S1A --> E1["🧪 Experiment\nShow prompt to 10% of users\nMeasure: next room start rate"]
+    S1B --> E2["🧪 Experiment\nA/B test path assignment\nMeasure: W1 completion rate"]
+    S2A --> E3["🧪 Experiment\nAdd difficulty filter to room picker\nMeasure: drop-off rate"]
+```
+
+Label nodes clearly. Use icons to distinguish levels: 🎯 outcome, 💡 opportunity, solution (no icon), 🧪 experiment.
+Highlight the prioritised opportunity and its solutions — add `:::priority` class or a note.
+
+---
+
+### Optional — Draw.io export
+
+After delivering the Mermaid diagram, ask:
+
+> "Want me to export this as a Draw.io diagram you can open and edit directly?"
+
+If yes: use the Draw.io MCP to create the diagram. Map the same tree structure — outcome at the top, opportunities as children, solutions and experiments branching below. Use distinct colours per level:
+- Outcome → dark blue
+- Opportunities → amber
+- Solutions → light blue
+- Experiments → green
