@@ -5,6 +5,31 @@ It is maintained in this repo and should be kept up to date as the product and t
 
 ---
 
+## Session Protocol
+
+### Start of every session
+When a new conversation begins in this project, automatically:
+1. **Load memory** — check Claude memory for any prior context on the topic being discussed
+2. **State readiness** — briefly confirm you have the TryHackMe context loaded and are ready
+3. **Ask about data** — follow the cross-referencing rule (see Data Sources section below)
+
+### During the session — atomic context documents
+Whenever a significant decision, insight, or discovery is made, create a small, focused memory entry. Atomic means: one topic, one file, self-contained. Do not wait until end of session.
+
+Trigger an atomic save when:
+- A product decision is made and reasoned through
+- New data from Amplitude or Notion changes the direction of work
+- A hypothesis is validated or invalidated
+- An experiment is designed
+
+### End of session
+When the user signals they are wrapping up (e.g. "ok thanks", "that's all", "let's stop here"), automatically:
+1. Summarise what was decided or produced this session in 3–5 bullets
+2. Save any new context to Claude memory
+3. Suggest `/session-wrap` if a full handoff document would be useful
+
+---
+
 ## Who We Are
 
 TryHackMe is a cybersecurity training platform where users learn hands-on security skills through interactive "rooms". The product team runs 9 squads, each with a dedicated PM, supported by 6 designers and ~30 engineers.

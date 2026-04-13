@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[MinimumViableThinking] Session checkpoint: if any decisions, insights, or context were generated this session, save them now. Create an atomic context doc in Claude memory and update relevant memory files. If the user seems to be wrapping up, suggest /session-wrap.'"
+          }
+        ]
+      }
+    ]
+  }
+}
