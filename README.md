@@ -39,7 +39,28 @@ Once added, you can trigger any command by typing `/command-name` in Claude Code
 
 ---
 
+## Two layers — Thinking and Artifact
+
+Commands are organised in two layers that compose together:
+
+- **Thinking skills** (`/thinking:*`) are pure Socratic dialogues. They ask questions, pressure-test your direction, and never produce a deliverable. Their output is *sharpened inputs* — your own answers, reorganised — that you carry into the artifact layer.
+- **Artifact skills** (everything else) produce deliverables — PRDs, tickets, research briefs, opportunity maps.
+
+Use them together: run `/thinking:strategy` first to pressure-test your thinking, then run `/write-prd` with the sharpened inputs. The thinking layer keeps the AI from jumping to conclusions; the artifact layer produces the document once your inputs are sharp.
+
+---
+
 ## Available Commands
+
+### Thinking skills (Socratic dialogue — no artifacts)
+
+Pure question-and-answer dialogues. Every thinking skill follows the same 4-phase pattern: **Frame** (1 question, state the direction in one sentence) → **Probe** (2–3 adaptive questions on underlying logic) → **Stress-test** (2–3 adaptive questions pushing back) → **Sharpen** (you restate, AI surfaces one blind spot, outputs a transcribed sharpened-inputs block in your own words).
+
+Hard rules every thinking skill enforces: one question at a time, no AI opinion until the final phase, no artifact ever produced.
+
+| Command | What it does |
+|---|---|
+| `/thinking:strategy` | Pressure-test a strategic direction before you commit — useful before writing a vision doc, roadmap narrative, or strategy paper |
 
 ### Discovery & Strategy
 | Command | What it does |

@@ -140,6 +140,17 @@ Best for: prior research, PRDs, experiment write-ups, briefs, decision logs, any
 
 Always search Notion before starting any research brief, PRD, or synthesis — prior work may already exist.
 
+### Granola (MCP connected)
+Best for: meeting notes, discovery conversations, research interviews, stakeholder sessions, anything that was discussed out loud.
+
+| Question type | Granola approach |
+|---|---|
+| What did we discuss about this topic? | Search notes by keyword or topic |
+| What was decided in a specific meeting? | Retrieve notes from that session |
+| What did a user say in a research interview? | Pull interview notes for verbatim quotes |
+
+Use Granola to ground outputs in real conversation — not just docs and data.
+
 ### HEX (manual reference)
 Best for: custom SQL notebooks, deeper joins across datasets, analysis that Amplitude can't do natively.
 Not MCP-connected — reference HEX when the user shares a link or notebook directly.
@@ -150,12 +161,13 @@ Not MCP-connected — reference HEX when the user shares a link or notebook dire
 
 When running any discovery, research, or documentation command, always ask first:
 
-> "Before I start — do you want me to pull data from Amplitude and Notion to ground this in real signals? I can search for prior research, existing docs, and behavioural data relevant to this topic."
+> "Before I start — do you want me to pull data from Amplitude, Notion, and Granola to ground this in real signals? I can search for prior research, existing docs, behavioural data, and meeting notes relevant to this topic."
 
 If yes:
 1. **Search Notion first** — what has the team already learned or decided?
 2. **Pull Amplitude data** — what does actual user behaviour tell us?
-3. **Flag gaps** — what's missing from both sources that the user needs to go find?
+3. **Search Granola** — what was discussed in meetings or research sessions?
+4. **Flag gaps** — what's missing from all sources that the user needs to go find?
 
 If no: proceed with the information the user has provided and flag where data would strengthen the output.
 
@@ -203,6 +215,20 @@ Never generate data from memory when a source is reachable. Always cite where da
 ---
 
 ## Available Commands
+
+The skills are organised in two layers. They compose — run a thinking skill to sharpen your inputs, then run an artifact skill to produce the deliverable.
+
+### Layer 1 — Thinking skills (Socratic dialogue, no artifacts)
+
+Pure question-and-answer dialogues that pressure-test your direction before you commit. They never produce a deliverable. Output is sharpened inputs you carry into the artifact layer.
+
+| Command | What it does |
+|---|---|
+| `/thinking:strategy` | Pressure-test a strategic direction before you commit |
+
+**Shared pattern every thinking skill follows**: Frame (1 question) → Probe the logic (2–3 adaptive questions) → Stress-test (2–3 adaptive questions) → Sharpen (user restates + AI offers one blind-spot flag + transcribed sharpened-inputs block in user's own words). Hard rules: one question at a time, no AI opinion until the final phase, no artifact output.
+
+### Layer 2 — Artifact skills (produce deliverables)
 
 **Discovery & Strategy**
 | Command | What it does |
